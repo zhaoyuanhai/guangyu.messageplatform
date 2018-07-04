@@ -1,0 +1,41 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auro - Elegant, Minimal, Creative Bootstrap Template </title>
+    <link rel="stylesheet" href="/Content//css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Content/css/flexslider.css">
+    <link rel="stylesheet" href="/Content/css/main.css">
+    <link rel="stylesheet" href="/Content/css/responsive.css">
+    <link rel="stylesheet" href="/Content/css/animate.min.css">
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">*@
+    @RenderSection("header", false)
+</head>
+<body>
+    <section class="tophead" role="tophead">
+        <!-- Navigation Section -->
+        <header id="header">
+            <div class="header-content clearfix">
+                <img style="margin-top:-30px;" src="/images/LOGO-kh.png" />
+                @*<a class="logo" href="#">Auro</a>*@
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="/home/index#header-slider">首页</a></li>
+                        <li><a href="/home/index#services">应用领域</a></li>
+                        <li><a href="/home/index#portfolio">关于我们</a></li>
+                        <li><a href="/home/index#news">新闻中心</a></li>
+                        <li><a href="/home/index#contact">联系</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="nav-toggle">Menu<span></span></a>
+            </div>
+        </header>
+        <!-- Navigation Section -->
+    </section>
+    @RenderBody()
+</body>
+</html>
